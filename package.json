@@ -1,0 +1,24 @@
+{
+  "name": "v2-template-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "rm -rf ./dist/ && parcel serve src/*.html --https",
+    "build": "rm -rf ./dist/ && parcel build src/*.html && cd dist && rm ../dist.zip && zip -r ../dist.zip ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.3.0",
+    "parcel": "^1.12.4",
+    "parcel-plugin-copy-file": "github:tehpsalmist/parcel-plugin-copy-file",
+    "tailwindcss": "^1.1.4"
+  },
+  "dependencies": {
+    "@zenginehq/zengine-sdk": "github:ZengineHQ/zengine-sdk",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}

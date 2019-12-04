@@ -1,0 +1,9 @@
+{
+  "icon": "icon-asl",
+  "views": [
+    {
+      "type": "fullPage",
+      "src": "/index.html"
+    }
+  ]
+}
