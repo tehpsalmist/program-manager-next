@@ -1,21 +1,28 @@
-import React, { useState, useEffect, createContext } from 'react'
+import React, { createContext } from 'react'
 import { render } from 'react-dom'
 import allTheStuff from '../programs.json'
 import { ProgramList, Program } from './components'
-import {BrowserRouter as Router, NavLink, Route, Switch} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Container } from 'react-bootstrap'
+import { Breadcrumbs } from './components'
 import './styles.scss'
 import '@fortawesome/fontawesome-free/css/all.css'
 
 export const ProgramContext = createContext()
 
-console.log(allTheStuff)
-
 export const App = props => {
-  console.log(location.pathname)
-  return <ProgramContext.Provider value={allTheStuff}>
+  return <ProgramContext.Provider value={{
+    breadcrumbs: [{
+      name: 'Programs',
+      link: '/programs',
+    }],
+    data: allTheStuff,
+  }}>
     <Router>
-      <main className='container'>
+      <Container>
         <h1>Program Manager <em>Next!</em></h1>
+        <Breadcrumbs />
+        <hr />
         <Switch>
           <Route path="/programs/:id">
             <Program />
@@ -27,7 +34,7 @@ export const App = props => {
             <ProgramList />
           </Route>
         </Switch>
-      </main>
+      </Container>
     </Router>
   </ProgramContext.Provider>
 }

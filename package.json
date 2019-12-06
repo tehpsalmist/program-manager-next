@@ -20,8 +20,10 @@
   "dependencies": {
     "@zenginehq/zengine-sdk": "github:ZengineHQ/zengine-sdk",
     "bootstrap": "^4.4.1",
+    "bootstrap-react": "^0.3.1",
     "object-editor-react": "^1.1.0",
     "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2"
   }
