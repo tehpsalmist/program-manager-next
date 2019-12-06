@@ -1,0 +1,79 @@
+{
+  "workspace_id": 12345,
+  "programs": [
+    {
+      "id": 1,
+      "name": "Our Program",
+      "description": "This is a program that does some scholarship thing",
+      "type?": "scholarship",
+      "template": "Not sure...",
+      "constituents": [
+        {
+          "name": "Applicant",
+          "type": "applicant",
+          "form_id": 123,
+          "fields": [
+            {
+              "name": "Email Address",
+              "description": "???",
+              "type": "email_address",
+              "field_id": 123
+            },
+            {
+              "password": "Password",
+              "description?": "???",
+              "type": "password",
+              "field_id": 123
+            }
+          ]
+        },
+        {
+          "name": "Reviewer",
+          "type": "reviewer",
+          "form_id": 123,
+          "fields": [
+            {
+              "name": "Email Address",
+              "description": "???",
+              "type": "email_address",
+              "field_id": 123
+            },
+            {
+              "password": "Password",
+              "description?": "???",
+              "type": "password",
+              "field_id": 123
+            }
+          ]
+        }
+      ],
+      "applications": [
+        {
+          "id": 1234,
+          "name": "Eligibility Survey",
+          "description": "lsslkjsdflkj",
+          "initial_status": "not_started",
+          "form_id": 1234
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1234,
+          "name": "Initial Review",
+          "description": "lsslkjsdflkj",
+          "initial_status": "not_started",
+          "form_id": 1234
+        }
+      ],
+      "disbursements": [
+        {
+          "id": 2345,
+          "name": "Initial Review",
+          "description": "lsslkjsdflkj",
+          "initial_status": "not_started",
+          "form_id": 2345
+        }
+      ]
+    }
+  ]
+}
